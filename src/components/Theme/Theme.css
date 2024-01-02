@@ -1,3 +1,11 @@
+/* -----------Variables----------- */
+:root {
+  --color: #9176ff;
+  --dark-color: #2b2b2b;
+  --dark-icon-color: #fff;
+  --light-color: #f7f7f7;
+  --light-icon-color: #ffde59;
+}
 /* -----------Base----------- */
 * {
   margin: 0;

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import "./Theme.css";
-import "../../index.css";
 
 const Theme = () => {
   const element = document.documentElement;
