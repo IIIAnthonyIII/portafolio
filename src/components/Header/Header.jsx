@@ -1,8 +1,10 @@
+import "./Header.css";
+
 const Header = () => {
     return (
-        <div>
+        <section id="header">
             Header
-        </div>
+        </section>
     )
 }
 
