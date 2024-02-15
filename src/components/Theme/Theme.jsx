@@ -18,10 +18,23 @@ const Theme = () => {
     //   text: "dark",
     // },
     {
+      id: 3,
       icon: "fa-desktop",
       text: "system",
     },
   ];
+  function operationClassIcons(removeIcon, addIcon) {
+    const icon = document.querySelector(".btn_icon");
+    icon.classList.remove(removeIcon);
+    icon.classList.add(addIcon);
+  }
+  function animationIcon() {
+    const icon = document.querySelector(".btn_icon");
+    icon.classList.add("animated");
+    setTimeout(() => {
+      icon.classList.remove("animated");
+    }, 500);
+  }
   const handleChangeTheme = () => {
     setTheme((prevTheme) => (prevTheme == "light" ? "dark" : "light"));
     animationIcon();
@@ -38,18 +51,6 @@ const Theme = () => {
       operationClassIcons("fa-moon", "fa-sun");
     }
     animationIcon();
-  }
-  function operationClassIcons(removeIcon, addIcon) {
-    const icon = document.querySelector(".btn_icon");
-    icon.classList.remove(removeIcon);
-    icon.classList.add(addIcon);
-  }
-  function animationIcon() {
-    const icon = document.querySelector(".btn_icon");
-    icon.classList.add("animated");
-    setTimeout(() => {
-      icon.classList.remove("animated");
-    }, 500);
   }
   useEffect(() => {
     if (theme === "dark") {
@@ -90,6 +91,7 @@ const Theme = () => {
       </div>
       {options?.map((opt) => (
         <div
+          key={opt.id}
           className="btn w-12 h-12 ml-2 justify-center hover:bg-blue-100"
           onClick={() => setTheme(opt.text)}
         >

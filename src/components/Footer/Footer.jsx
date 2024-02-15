@@ -2,7 +2,7 @@ import "./Footer.css";
 
 const Footer = () => {
     return (
-        <section id="footer">
+        <section id="footer" className="dark:bg-black">
             Footer
         </section>
     )

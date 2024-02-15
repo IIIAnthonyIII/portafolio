@@ -1,6 +1,7 @@
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React + Tailwind + Framer Motion + Font Awesome 4
 
 Currently, two official plugins are available:
 
